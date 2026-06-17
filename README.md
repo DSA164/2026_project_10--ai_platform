@@ -1,45 +1,93 @@
-# Ai Platform
+# 2026 Project 11 — AI Platform
 
-![AI Engineering](https://img.shields.io/badge/AI-engineering-blue)
+## Purpose
 
-## AI Engineering Learning Program
+This project is part of the `AI-Engineering-Lab` learning roadmap.
 
-This repository is part of my **AI Engineering learning journey**.
+It is the integration project of the roadmap. The goal is to assemble previous learning blocks into a small local AI platform.
 
-Designed and developed **from scratch by myself with AI assistance for research and ideation**.
+This project should not be started too early. It depends on the understanding developed in local LLM serving, workflow automation, RAG, agents, vision, multimodal workflows, and robotics.
 
----
+## Why this project exists
 
-## Description
+The previous projects build separate skills. This project combines them into a system:
 
-Unified AI platform integrating LLM, RAG, agents and multimodal.
+```text
+local LLM service
+  ↓
+workflow automation
+  ↓
+RAG service
+  ↓
+controlled agents
+  ↓
+monitoring
+  ↓
+applications / clients
+```
 
----
+The aim is not to build a large production platform immediately. The aim is to understand service boundaries, data flows, failure modes, and operational monitoring.
 
-## Learning objectives
+## Learning focus
 
-- Build production-ready AI systems
-- Master LLM infrastructure
-- Develop advanced RAG architectures
-- Build autonomous AI agents
-- Integrate multimodal AI systems
+This project focuses on:
 
----
+- local AI platform architecture;
+- model serving;
+- service boundaries;
+- workflow orchestration;
+- RAG integration;
+- controlled agents;
+- monitoring;
+- logging;
+- deployment notes;
+- failure modes.
+
+## Minimal milestone
+
+Draw and document the architecture of a minimal local AI platform with at least three services.
+
+## Final deliverable
+
+A minimal integrated platform with:
+
+- a local LLM service;
+- one workflow automation service;
+- one RAG service;
+- one controlled agent or assistant;
+- basic logging and monitoring;
+- documented data flows;
+- documented failure modes.
 
 ## Repository structure
 
-src/ → implementation  
-docs/ → architecture  
-tests/ → experiments  
-examples/ → demos  
-docker/ → container setup  
+Recommended structure:
 
----
+```text
+architecture/      system diagrams and service boundaries
+services/          individual platform services
+docs/              operational notes
+notes/             concepts and design decisions
+monitoring/        logs, metrics, dashboards, checks
+deployment/        local deployment notes
+evaluations/       platform-level validation checklist
+MENTORING.md       guided exercises and validation checklist
+learning_log.md    session-by-session observations
+```
 
-## Progress tracking
+## Success criteria
 
-See `progress.md`
+By the end of this project, I should be able to explain:
 
-Started: 2026-03-10
+- what services exist in the platform;
+- how data flows between them;
+- which component owns which responsibility;
+- how failures are detected;
+- what is monitored;
+- how the platform could evolve without becoming unmaintainable.
 
-Status: 🚧 In progress
+## Relation to the full roadmap
+
+This project closes the first cycle of the `AI-Engineering-Lab` roadmap.
+
+It should demonstrate that the previous projects were not isolated exercises, but reusable engineering blocks for building practical AI systems.
